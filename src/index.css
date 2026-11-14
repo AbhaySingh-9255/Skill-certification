@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #F6F5F0;
+    color: #202B28;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.login-background {
+    background: #F6F5F0;
+}
+
+.login-background::before {
+    content: none;
+}
+
+.login-background::after {
+    content: none;
+}
+
+.login-card {
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(32, 43, 40, 0.06);
+}
+
+.border-gray-100,
+.border-gray-200,
+.border-gray-300 {
+    border-color: #D8DED8;
+}
+
+.text-gray-800,
+.text-gray-700,
+.text-gray-600,
+.text-gray-500 {
+    color: #5E6B65;
+}
+
+:root {
+    color-scheme: light;
+    --app-background: #F6F5F0;
+    --app-card: #FFFFFF;
+    --app-primary: #245B4A;
+    --app-primary-hover: #194638;
+    --app-heading: #202B28;
+    --app-text: #5E6B65;
+    --app-border: #D8DED8;
+    --app-brass: #B77936;
+}
+
+:focus-visible {
+    outline: 2px solid #245B4A;
+    outline-offset: 2px;
+}
+
+/* Utility to disable selection during tests */
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+[data-theme="dark"] body {
+    background-color: #0b1220;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+[data-theme="dark"] .bg-slateBg,
+[data-theme="dark"] .bg-cardBg,
+[data-theme="dark"] .bg-white,
+[data-theme="dark"] .bg-slate-50,
+[data-theme="dark"] .bg-gray-50 {
+    background-color: #111827 !important;
+}
+
+[data-theme="dark"] .text-navy,
+[data-theme="dark"] .text-gray-800,
+[data-theme="dark"] .text-gray-700 {
+    color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .text-textMuted,
+[data-theme="dark"] .text-gray-600,
+[data-theme="dark"] .text-gray-500 {
+    color: #a7b3c5 !important;
+}
+
+[data-theme="dark"] .border-gray-100,
+[data-theme="dark"] .border-gray-200,
+[data-theme="dark"] .border-gray-300 {
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] input::placeholder {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .hover\:bg-gray-50:hover {
+    background-color: #1e293b !important;
+}
+
+[data-theme="dark"] .bg-amber-50 {
+    background-color: #422006 !important;
+}
+
+[data-theme="dark"] .text-amber-900,
+[data-theme="dark"] .text-amber-800 {
+    color: #fde68a !important;
+}
+
+[data-theme="dark"] .border-amber-200 {
+    border-color: #92400e !important;
+}
+
+[data-density="compact"] .p-5 {
+    padding: 1rem !important;
+}
+
+[data-density="compact"] .p-6 {
+    padding: 1.25rem !important;
+}
+
+[data-density="compact"] .p-8 {
+    padding: 1.5rem !important;
+}
+
+[data-density="compact"] .gap-7 {
+    gap: 1.25rem !important;
+}
